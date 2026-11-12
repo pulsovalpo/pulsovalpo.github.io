@@ -7,7 +7,7 @@ Página del centro de estudios de opinión pública Pulso Valparaíso.
 | Archivo | Para qué sirve |
 |---|---|
 | `index.html` | Página de inicio |
-| `panel-ciudadano.html` | Formulario de inscripción al panel ciudadano |
+| `panel-ciudadano.html` | Inscripción al panel ciudadano (el formulario está en Tally: https://tally.so/r/OQ4Y7K) |
 | `css/estilos.css` | Colores, letras y diseño de todo el sitio |
 | `js/sitio.js` | Menú para celulares y comportamiento de los formularios |
 | `img/favicon.svg` | Ícono que aparece en la pestaña del navegador |
@@ -21,6 +21,6 @@ Página del centro de estudios de opinión pública Pulso Valparaíso.
 
 ## Pendiente
 
-- Conectar el formulario del panel y el del boletín a un servicio que guarde los datos (hoy son de demostración).
+- Conectar el formulario del boletín a un servicio que guarde los correos (hoy es de demostración).
 - Agregar el dominio propio (archivo `CNAME`).
 - Crear las páginas de Quiénes somos, Resultados, Metodología, Noticias, Contacto y Política de privacidad.
