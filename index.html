@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pulso Valparaíso · Centro de estudios de opinión pública</title>
+  <meta name="description" content="Encuestas y estudios de opinión sobre los temas que importan en la Región de Valparaíso.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ===================== ENCABEZADO Y MENÚ ===================== -->
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="index.html" aria-label="Pulso Valparaíso, ir al inicio">
+      <svg width="56" height="28" viewBox="0 0 600 200" aria-hidden="true"><polyline class="pulso-linea" points="0,150 185,150 215,80 245,170 285,30 320,160 350,105 380,150 600,150" fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/><circle class="pulso-punto" cx="285" cy="30" r="30"/></svg>
+      <span class="marca-texto"><strong>PULSO</strong><span>VALPARAÍSO</span></span>
+    </a>
+    <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      Menú
+    </button>
+    <nav class="menu" id="menu-principal" aria-label="Menú principal">
+      <a href="#sobre">Quiénes somos</a>
+      <a href="#participa">Encuestas</a>
+      <a href="#ultimo-estudio">Resultados</a>
+      <a href="#como-trabajamos">Metodología</a>
+      <a href="#noticias">Noticias</a>
+      <a href="#contacto">Contacto</a>
+      <a class="boton boton-acento" href="#participa">Responde una encuesta</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ===================== PORTADA ===================== -->
+<section class="portada">
+  <div class="contenedor">
+    <div class="portada-texto">
+      <p class="antetitulo">Centro de estudios de opinión pública · Región de Valparaíso</p>
+      <h1>Medimos con rigor lo que opina la región.</h1>
+      <p class="bajada">Encuestas y estudios de opinión sobre los temas que importan en la Región de Valparaíso.</p>
+      <div class="grupo-botones">
+        <a class="boton boton-acento" href="#ultimo-estudio">Ver los últimos resultados</a>
+        <a class="boton boton-borde-claro" href="#participa">Participa en una encuesta</a>
+      </div>
+    </div>
+    <div class="portada-grafico">
+      <svg viewBox="0 0 600 260" aria-hidden="true"><line x1="0" y1="200" x2="600" y2="200" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3"/><polyline class="pulso-linea" points="0,200 150,200 185,200 215,110 245,225 285,40 320,215 350,140 380,200 600,200" fill="none" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><circle class="pulso-punto" cx="285" cy="40" r="14"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ÚLTIMO ESTUDIO =====================
+     Para publicar un estudio nuevo, cambia los textos entre [corchetes]. -->
+<section class="seccion" id="ultimo-estudio">
+  <div class="contenedor">
+    <div class="fila-titulo">
+      <div class="titulo-seccion">
+        <p class="antetitulo">Último estudio</p>
+        <h2>[Título del estudio más reciente]</h2>
+        <p class="dato-ficha">[Mes y año] · Encuesta [presencial / telefónica / en línea] · [N] casos · Margen de error ±[X]%</p>
+      </div>
+      <a class="enlace-flecha" href="#">Ver todos los estudios →</a>
+    </div>
+    <div class="fila">
+      <div class="cifra">
+        <strong>[XX]%</strong>
+        <p>[Resultado principal en una frase: qué opina la gente sobre el tema 1]</p>
+      </div>
+      <div class="cifra">
+        <strong>[XX]%</strong>
+        <p>[Segundo hallazgo destacado del estudio]</p>
+      </div>
+      <div class="cifra">
+        <strong>[XX]%</strong>
+        <p>[Tercer hallazgo, por ejemplo una comparación con la medición anterior]</p>
+      </div>
+    </div>
+    <div class="grupo-botones">
+      <a class="boton boton-azul" href="#">Leer el informe completo</a>
+      <a class="boton boton-borde" href="#">Descargar ficha técnica (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTICIPA ===================== -->
+<section class="seccion seccion-gris" id="participa">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <p class="antetitulo">Participa</p>
+      <h2>Tu opinión cuenta</h2>
+    </div>
+    <div class="fila">
+      <article class="tarjeta tarjeta-acento">
+        <p class="etiqueta">Encuesta abierta</p>
+        <h3>[Nombre de la encuesta en curso]</h3>
+        <p>[Una o dos frases sobre de qué trata y para qué se usarán las respuestas.]</p>
+        <p class="detalle">Toma unos [X] minutos · Respuestas anónimas · Abierta hasta el [fecha]</p>
+        <!-- Cuando tengas la encuesta (Google Forms u otra), pega su enlace en href="#" -->
+        <a class="boton boton-acento" href="#">Responder ahora</a>
+      </article>
+      <article class="tarjeta">
+        <p class="etiqueta">Panel ciudadano</p>
+        <h3>Únete a nuestro panel de opinión</h3>
+        <p>Inscríbete y te invitaremos a responder estudios sobre la región. Tú decides en cuáles participar y puedes darte de baja cuando quieras.</p>
+        <a class="boton boton-azul" href="panel-ciudadano.html">Inscribirme</a>
+      </article>
+    </div>
+    <p class="nota">Tus datos se tratan de forma confidencial y conforme a la ley de protección de datos personales. <a href="#">Lee nuestra política de privacidad</a>.</p>
+  </div>
+</section>
+
+<!-- ===================== TEMAS ===================== -->
+<section class="seccion" style="padding-bottom: 32px">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <p class="antetitulo">Temas que medimos</p>
+      <h2>Explora los resultados por tema</h2>
+    </div>
+    <div class="temas">
+      <a href="#">Seguridad</a>
+      <a href="#">Transporte y movilidad</a>
+      <a href="#">Vivienda y ciudad</a>
+      <a href="#">Medio ambiente</a>
+      <a href="#">Empleo y economía</a>
+      <a href="#">Salud</a>
+      <a href="#">Gobierno regional y municipios</a>
+      <a href="#">Turismo y cultura</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CÓMO TRABAJAMOS ===================== -->
+<section class="seccion" id="como-trabajamos" style="padding-top: 56px">
+  <div class="contenedor">
+    <div class="titulo-seccion">
+      <p class="antetitulo">Cómo trabajamos</p>
+      <h2>Datos para conocer la región</h2>
+    </div>
+    <div class="principios">
+      <div class="principio">
+        <p class="numero">01</p>
+        <h3>Metodología transparente</h3>
+        <p>Cada estudio publica su ficha técnica: cómo se eligió la muestra, cuántas personas respondieron y cuál es el margen de error.</p>
+      </div>
+      <div class="principio">
+        <p class="numero">02</p>
+        <h3>Independencia</h3>
+        <p>[Explica aquí cómo se financia el centro y cómo resguarda su independencia frente a quienes encargan estudios.]</p>
+      </div>
+      <div class="principio">
+        <p class="numero">03</p>
+        <h3>Datos abiertos</h3>
+        <p>Los resultados y las bases de datos anonimizadas quedan disponibles para la ciudadanía, la prensa y la academia.</p>
+      </div>
+    </div>
+    <div><a class="enlace-flecha" href="#">Conoce nuestra metodología →</a></div>
+  </div>
+</section>
+
+<!-- ===================== NOTICIAS ===================== -->
+<section class="seccion seccion-gris" id="noticias">
+  <div class="contenedor">
+    <div class="fila-titulo">
+      <div class="titulo-seccion">
+        <p class="antetitulo">Noticias y análisis</p>
+        <h2>Lo último del centro</h2>
+      </div>
+      <a class="enlace-flecha" href="#">Ver todas las noticias →</a>
+    </div>
+    <div class="fila">
+      <a class="noticia" href="#">
+        <span class="etiqueta">[CATEGORÍA] · [FECHA]</span>
+        <span class="titular">[Título de la noticia o columna]</span>
+        <span class="resumen">[Resumen breve de dos líneas sobre el contenido.]</span>
+      </a>
+      <a class="noticia" href="#">
+        <span class="etiqueta">[CATEGORÍA] · [FECHA]</span>
+        <span class="titular">[Título de la noticia o columna]</span>
+        <span class="resumen">[Resumen breve de dos líneas sobre el contenido.]</span>
+      </a>
+      <a class="noticia" href="#">
+        <span class="etiqueta">[CATEGORÍA] · [FECHA]</span>
+        <span class="titular">[Título de la noticia o columna]</span>
+        <span class="resumen">[Resumen breve de dos líneas sobre el contenido.]</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BOLETÍN ===================== -->
+<section class="seccion boletin" style="padding: 72px 0">
+  <div class="contenedor">
+    <div class="boletin-texto">
+      <h2>Recibe los resultados en tu correo</h2>
+      <p>Un boletín cuando publicamos un estudio nuevo. Sin spam.</p>
+    </div>
+    <!-- Este formulario todavía no está conectado a un servicio que guarde los correos. -->
+    <form class="formulario-pendiente" data-mensaje="¡Gracias! (Demostración: la suscripción aún no está conectada.)">
+      <label class="campo">Correo electrónico
+        <input type="email" name="correo" placeholder="nombre@correo.cl" autocomplete="email" required>
+      </label>
+      <button class="boton boton-azul" type="submit">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== PIE DE PÁGINA ===================== -->
+<footer class="pie" id="contacto">
+  <div class="contenedor">
+    <div class="pie-columnas">
+      <div class="pie-marca" id="sobre">
+        <a class="marca" href="index.html" aria-label="Pulso Valparaíso, ir al inicio">
+          <svg width="56" height="28" viewBox="0 0 600 200" aria-hidden="true"><polyline class="pulso-linea" points="0,150 185,150 215,80 245,170 285,30 320,160 350,105 380,150 600,150" fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/><circle class="pulso-punto" cx="285" cy="30" r="30"/></svg>
+          <span class="marca-texto"><strong>PULSO</strong><span>VALPARAÍSO</span></span>
+        </a>
+        <p>Centro de estudios de opinión pública de la Región de Valparaíso.</p>
+      </div>
+      <div class="pie-col">
+        <p class="titulo-col">Secciones</p>
+        <a href="#sobre">Quiénes somos</a>
+        <a href="#participa">Encuestas</a>
+        <a href="#ultimo-estudio">Resultados</a>
+        <a href="#como-trabajamos">Metodología</a>
+      </div>
+      <div class="pie-col">
+        <p class="titulo-col">Contacto</p>
+        <span>[correo de contacto]</span>
+        <span>[dirección], Valparaíso</span>
+        <span>[Instagram] · [LinkedIn] · [X]</span>
+      </div>
+    </div>
+    <div class="pie-final">
+      <span>© 2026 Pulso Valparaíso</span>
+      <span><a href="#">Política de privacidad</a> · <a href="#">Términos de uso</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/sitio.js"></script>
+</body>
+</html>

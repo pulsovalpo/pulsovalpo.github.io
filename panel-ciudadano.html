@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscripción al panel ciudadano · Pulso Valparaíso</title>
+  <meta name="description" content="Inscríbete en el panel ciudadano de Pulso Valparaíso y recibe invitaciones a responder estudios sobre la región.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-panel">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ===================== ENCABEZADO Y MENÚ ===================== -->
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="index.html" aria-label="Pulso Valparaíso, ir al inicio">
+      <svg width="56" height="28" viewBox="0 0 600 200" aria-hidden="true"><polyline class="pulso-linea" points="0,150 185,150 215,80 245,170 285,30 320,160 350,105 380,150 600,150" fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/><circle class="pulso-punto" cx="285" cy="30" r="30"/></svg>
+      <span class="marca-texto"><strong>PULSO</strong><span>VALPARAÍSO</span></span>
+    </a>
+    <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      Menú
+    </button>
+    <nav class="menu" id="menu-principal" aria-label="Menú principal">
+      <a href="index.html#sobre">Quiénes somos</a>
+      <a href="index.html#participa">Encuestas</a>
+      <a href="index.html#ultimo-estudio">Resultados</a>
+      <a href="index.html#como-trabajamos">Metodología</a>
+      <a href="index.html#noticias">Noticias</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a class="boton boton-acento" href="index.html#participa">Responde una encuesta</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido" class="panel">
+  <div class="contenedor">
+    <p class="migas"><a href="index.html">Inicio</a> › <a href="index.html#participa">Encuestas</a> › Panel ciudadano</p>
+
+    <div class="panel-columnas">
+
+      <!-- ---------- Columna de información ---------- -->
+      <div class="panel-info">
+        <p class="antetitulo">Panel ciudadano</p>
+        <h1>Súmate a quienes le toman el pulso a la región</h1>
+        <p class="bajada">El panel es un grupo de vecinas y vecinos de la Región de Valparaíso que aceptan recibir invitaciones a responder nuestros estudios.</p>
+        <div class="caja-blanca">
+          <p class="titulo-caja">¿Qué significa participar?</p>
+          <p><b>Es voluntario.</b> Te invitamos a responder encuestas y tú decides en cuáles participar.</p>
+          <p><b>Es confidencial.</b> Tus respuestas se analizan en conjunto con las de otras personas; nunca publicamos datos que te identifiquen.</p>
+          <p><b>Puedes salir cuando quieras.</b> Cada invitación trae un enlace para darte de baja.</p>
+          <p><b>Tus opiniones sobre la región importan.</b></p>
+        </div>
+      </div>
+
+      <!-- ---------- Formulario ----------
+           IMPORTANTE: este formulario todavía NO guarda los datos.
+           Cuando elijamos el servicio de formularios, se agrega aquí su dirección
+           (action="...") y se quita la clase "formulario-pendiente". -->
+      <div class="panel-formulario">
+        <form class="formulario formulario-pendiente" id="formulario-panel" aria-labelledby="titulo-formulario" data-confirmacion="confirmacion-panel">
+          <div class="formulario-titulo">
+            <h2 id="titulo-formulario">Formulario de inscripción</h2>
+            <p>Toma unos 3 minutos. Los campos marcados con * son obligatorios.</p>
+          </div>
+
+          <fieldset class="bloque">
+            <legend>1. Tus datos de contacto</legend>
+            <div class="par">
+              <label class="campo">Nombre *
+                <input type="text" name="nombre" autocomplete="given-name" required>
+              </label>
+              <label class="campo">Apellidos *
+                <input type="text" name="apellidos" autocomplete="family-name" required>
+              </label>
+            </div>
+            <div class="par">
+              <label class="campo">Correo electrónico *
+                <input type="email" name="correo" autocomplete="email" placeholder="nombre@correo.cl" required>
+              </label>
+              <label class="campo">Celular (opcional)
+                <input type="tel" name="celular" autocomplete="tel" placeholder="+56 9 1234 5678">
+              </label>
+            </div>
+            <fieldset class="opciones">
+              <legend>¿Cómo prefieres recibir las invitaciones? *</legend>
+              <label class="opcion"><input type="radio" name="canal" value="Correo electrónico" checked> Correo electrónico</label>
+              <label class="opcion"><input type="radio" name="canal" value="WhatsApp"> WhatsApp</label>
+              <label class="opcion"><input type="radio" name="canal" value="Ambos"> Ambos</label>
+            </fieldset>
+          </fieldset>
+
+          <fieldset class="bloque">
+            <legend>2. Sobre ti</legend>
+            <p class="ayuda">Lo usamos solo para que cada estudio represente bien a la región: que estén todas las comunas, edades y realidades.</p>
+            <div class="par">
+              <label class="campo">Comuna donde vives *
+                <select name="comuna" required>
+                  <option value="">Elige tu comuna</option>
+                  <option>Algarrobo</option>
+                  <option>Cabildo</option>
+                  <option>Calle Larga</option>
+                  <option>Cartagena</option>
+                  <option>Casablanca</option>
+                  <option>Catemu</option>
+                  <option>Concón</option>
+                  <option>El Quisco</option>
+                  <option>El Tabo</option>
+                  <option>Hijuelas</option>
+                  <option>Isla de Pascua</option>
+                  <option>Juan Fernández</option>
+                  <option>La Calera</option>
+                  <option>La Cruz</option>
+                  <option>La Ligua</option>
+                  <option>Limache</option>
+                  <option>Llaillay</option>
+                  <option>Los Andes</option>
+                  <option>Nogales</option>
+                  <option>Olmué</option>
+                  <option>Panquehue</option>
+                  <option>Papudo</option>
+                  <option>Petorca</option>
+                  <option>Puchuncaví</option>
+                  <option>Putaendo</option>
+                  <option>Quillota</option>
+                  <option>Quilpué</option>
+                  <option>Quintero</option>
+                  <option>Rinconada</option>
+                  <option>San Antonio</option>
+                  <option>San Esteban</option>
+                  <option>San Felipe</option>
+                  <option>Santa María</option>
+                  <option>Santo Domingo</option>
+                  <option>Valparaíso</option>
+                  <option>Villa Alemana</option>
+                  <option>Viña del Mar</option>
+                  <option>Zapallar</option>
+                </select>
+              </label>
+              <label class="campo">Edad *
+                <select name="edad" required>
+                  <option value="">Elige tu tramo de edad</option>
+                  <option>18 a 29 años</option>
+                  <option>30 a 44 años</option>
+                  <option>45 a 59 años</option>
+                  <option>60 años o más</option>
+                </select>
+              </label>
+            </div>
+            <div class="par">
+              <label class="campo">Sexo *
+                <select name="sexo" required>
+                  <option value="">Elige una opción</option>
+                  <option>Mujer</option>
+                  <option>Hombre</option>
+                  <option>Otro</option>
+                  <option>Prefiero no responder</option>
+                </select>
+              </label>
+              <label class="campo">Nivel educacional *
+                <select name="educacion" required>
+                  <option value="">Elige el más alto que completaste</option>
+                  <option>Básica</option>
+                  <option>Media</option>
+                  <option>Técnica profesional</option>
+                  <option>Universitaria</option>
+                  <option>Postgrado</option>
+                </select>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="opciones opciones-temas">
+            <legend>3. Temas que te interesan <span>(opcional)</span></legend>
+            <label class="opcion"><input type="checkbox" name="temas" value="Seguridad"> Seguridad</label>
+            <label class="opcion"><input type="checkbox" name="temas" value="Transporte y movilidad"> Transporte y movilidad</label>
+            <label class="opcion"><input type="checkbox" name="temas" value="Vivienda y ciudad"> Vivienda y ciudad</label>
+            <label class="opcion"><input type="checkbox" name="temas" value="Medio ambiente"> Medio ambiente</label>
+            <label class="opcion"><input type="checkbox" name="temas" value="Empleo y economía"> Empleo y economía</label>
+            <label class="opcion"><input type="checkbox" name="temas" value="Salud"> Salud</label>
+            <label class="opcion"><input type="checkbox" name="temas" value="Gobierno regional y municipios"> Gobierno regional y municipios</label>
+            <label class="opcion"><input type="checkbox" name="temas" value="Turismo y cultura"> Turismo y cultura</label>
+          </fieldset>
+
+          <fieldset class="consentimiento">
+            <legend>4. Consentimiento</legend>
+            <label class="aceptar"><input type="checkbox" name="mayor_de_edad" value="sí" required> <span>Declaro tener 18 años o más y vivir en la Región de Valparaíso. *</span></label>
+            <label class="aceptar"><input type="checkbox" name="acepta_privacidad" value="sí" required> <span>Leí la <a href="#">política de privacidad</a> y autorizo a Pulso Valparaíso a usar mis datos solo para invitarme a estudios y analizar los resultados de forma agregada y anónima. *</span></label>
+            <label class="aceptar"><input type="checkbox" name="boletin" value="sí"> <span>Quiero recibir también el boletín con los resultados de cada estudio.</span></label>
+            <p class="letra-chica">Puedes pedir ver, corregir o borrar tus datos cuando quieras escribiendo a [correo de privacidad]. Nunca vendemos ni compartimos tus datos con terceros.</p>
+          </fieldset>
+
+          <div class="enviar">
+            <button class="boton boton-acento" type="submit">Enviar inscripción</button>
+            <span>Te enviaremos un correo para confirmar tu inscripción.</span>
+          </div>
+        </form>
+
+        <div class="confirmacion" id="confirmacion-panel" role="status" tabindex="-1" hidden>
+          <svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="none" stroke="#EE6A4D" stroke-width="4"/><polyline points="22,37 32,47 51,27" fill="none" stroke="#11243F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h2>¡Gracias! Ya casi eres parte del panel</h2>
+          <p>Te enviamos un correo para confirmar tu inscripción. Revisa también la carpeta de spam. Cuando lo confirmes, te llegará la primera invitación con el próximo estudio.</p>
+          <p class="aviso-demo">Versión de demostración: este formulario todavía no guarda los datos.</p>
+          <div class="grupo-botones">
+            <a class="boton boton-azul" href="index.html">Volver al inicio</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="pie pie-simple">
+  <div class="contenedor">
+    <div class="pie-final">
+      <span>© 2026 Pulso Valparaíso</span>
+      <span><a href="#">Política de privacidad</a> · <a href="#">Términos de uso</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/sitio.js"></script>
+</body>
+</html>
