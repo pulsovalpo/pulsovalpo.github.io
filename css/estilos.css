@@ -223,3 +223,8 @@ p { margin: 0; }
 .confirmacion h2 { font-weight: 900; font-size: 34px; line-height: 1.15; }
 .confirmacion p { font-size: 18px; color: var(--texto-suave); max-width: 520px; }
 .aviso-demo { font-size: 15px !important; background: #FFF4DC; border: 1px solid var(--dorado); padding: 12px 16px; border-radius: 10px; }
+
+/* Formulario de Tally insertado */
+.panel-formulario .formulario-titulo { margin-bottom: 24px; }
+.formulario-tally { display: block; width: 100%; border: 0; min-height: 600px; }
+.panel-formulario .nota { margin-top: 16px; }
